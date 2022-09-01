@@ -9,8 +9,8 @@ import store from './redux/store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Provider store={store}>
-    <BrowserRouter>
+  <Provider store={store}>   {/* Provider: store을 앱에 적용시키는 컴포넌트*/}
+    <BrowserRouter>       {/* 브라우저를 라우팅 가능하게 해주는 컴포넌트 */}
       <App />
     </BrowserRouter>
   </Provider>
